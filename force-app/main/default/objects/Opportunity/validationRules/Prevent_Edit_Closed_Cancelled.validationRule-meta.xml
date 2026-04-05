@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Edit_Closed_Cancelled</fullName>
+    <active>true</active>
+    <description>Prevents editing of Opportunities that are in Closed Won, Closed Lost, or Cancelled stages. Users with the Can_Edit_Closed_Opportunity custom permission can bypass this rule.</description>
+    <errorConditionFormula>AND(
+    OR(
+        ISPICKVAL(PRIORVALUE(StageName), &apos;Closed Won&apos;),
+        ISPICKVAL(PRIORVALUE(StageName), &apos;Closed Lost&apos;),
+        ISPICKVAL(PRIORVALUE(StageName), &apos;Cancelled&apos;)
+    ),
+    NOT($Permission.Can_Edit_Closed_Opportunity)
+)</errorConditionFormula>
+    <errorMessage>This opportunity is closed/cancelled and cannot be edited. Contact your administrator if changes are needed.</errorMessage>
+</ValidationRule>

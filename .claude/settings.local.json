@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sf project:*)",
+      "Bash(python3 -c ':*)",
+      "Bash(sf sobject:*)",
+      "Bash(python3 -c \" import sys,json data=json.load\\(sys.stdin\\) fields=[f['name'] for f in data['result']['fields'] if f['name'].endswith\\('__c'\\)] for f in sorted\\(fields\\): print\\(f\\) \")",
+      "Read(//tmp/**)",
+      "Bash(sf data:*)",
+      "Bash(sf apex:*)",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); [print\\(f['name'],f['type'],f['label']\\) for f in d['result']['fields'] if f['custom']]\")",
+      "Bash(python -c ':*)",
+      "Bash(sf api:*)",
+      "Bash(sf org:*)",
+      "Bash(sort sf:*)",
+      "Read(//d/sf/deploy/**)",
+      "Read(//c/Users/Tommy/AppData/Local/Temp/**)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d.get\\('result',{}\\).get\\('files',[]\\), indent=2\\)\\)\")",
+      "Bash(find \"d:/sf/deploy/force-app/main/default/flows\" -name \"*.flow-meta.xml\" -type f ! -name \"Opportunity_RTF*\" -exec grep -l \"choiceText\\\\|fieldText\\\\|defaultConnectorLabel\" {} \\\\;)",
+      "Bash(grep -h \"fieldText>\\\\|choiceText>\\\\|defaultConnectorLabel>\" \"d:/sf/deploy/force-app/main/default/flows/\"*.flow-meta.xml)"
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+<template>
+
+    <div class="slds-page-header slds-page-header_object-home">
+
+        <div class="slds-page-header__row">
+
+            <div class="slds-page-header__col-title">
+                <div class="slds-media slds-no-space slds-grow">
+                    <div class="slds-media__figure">
+                        <lightning-icon
+                            icon-name={iconName}
+                            size="small">
+                        </lightning-icon>
+                    </div>
+
+                    <div class="slds-media__body">
+                        <p class="slds-text-title_caps">
+                            {objectLabel}
+                        </p>
+                        <h1 class="slds-page-header__title slds-truncate">
+                            {title}
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slds-grid slds-grid_vertical-align-center slds-p-horizontal_small slds-p-vertical_x-small slds-border_bottom">
+        <div class="slds-grow"></div>
+
+        <lightning-input
+            type="search"
+            variant="label-hidden"
+            placeholder="Search this list..."
+            onchange={handleSearch}
+            class="slds-size_medium"
+            >
+        </lightning-input>
+
+        <div class="slds-button-group slds-m-left_small" role="group">
+            <template for:each={computedActions} for:item="action">
+                <lightning-button-icon
+                    key={action.name}
+                    icon-name={action.icon}
+                    alternative-text={action.label}
+                    data-action={action.name}
+                    onclick={handleToolbarAction}
+                    disabled={action.disabled}>
+                    >
+                </lightning-button-icon>
+            </template>
+        </div>
+    </div>
+
+<div class="slds-is-relative">
+    <template if:true={isLoading}>
+      <lightning-spinner
+        alternative-text="Loading"
+        size="medium">
+      </lightning-spinner>
+    </template>
+
+    <lightning-datatable
+      key-field="Id"
+      data={data}
+      onrowselection={handleRowSelection}
+      columns={computedColumns}
+      onrowaction={handleRowAction}
+      onsave={handleSave}
+      draft-values={draftValues}>
+    </lightning-datatable>
+</div>
+    
+
+
+
+
+</template>

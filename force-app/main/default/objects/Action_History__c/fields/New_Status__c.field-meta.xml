@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Status__c</fullName>
+    <label>New Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Draft – New</fullName>
+                <default>false</default>
+                <label>Draft – New</label>
+            </value>
+            <value>
+                <fullName>Draft – Updating</fullName>
+                <default>false</default>
+                <label>Draft – Updating</label>
+            </value>
+            <value>
+                <fullName>Pending Sale Leader Review</fullName>
+                <default>false</default>
+                <label>Pending Sale Leader Review</label>
+            </value>
+            <value>
+                <fullName>Feedback by Sale Leader</fullName>
+                <default>false</default>
+                <label>Feedback by Sale Leader</label>
+            </value>
+            <value>
+                <fullName>Approved by Sale Leader</fullName>
+                <default>false</default>
+                <label>Approved by Sale Leader</label>
+            </value>
+            <value>
+                <fullName>Pending Sale Manager Approval</fullName>
+                <default>false</default>
+                <label>Pending Sale Manager Approval</label>
+            </value>
+            <value>
+                <fullName>Feedback by Sale Manager</fullName>
+                <default>false</default>
+                <label>Feedback by Sale Manager</label>
+            </value>
+            <value>
+                <fullName>Approved by Sale Manager</fullName>
+                <default>false</default>
+                <label>Approved by Sale Manager</label>
+            </value>
+            <value>
+                <fullName>Pending Dev Manager Accept</fullName>
+                <default>false</default>
+                <label>Pending Dev Manager Accept</label>
+            </value>
+            <value>
+                <fullName>Returned to Sale</fullName>
+                <default>false</default>
+                <label>Returned to Sale</label>
+            </value>
+            <value>
+                <fullName>Dev Manager Accept</fullName>
+                <default>false</default>
+                <label>Dev Manager Accept</label>
+            </value>
+            <value>
+                <fullName>Assigned to Dev Leader</fullName>
+                <default>false</default>
+                <label>Assigned to Dev Leader</label>
+            </value>
+            <value>
+                <fullName>Returned to Dev Manager</fullName>
+                <default>false</default>
+                <label>Returned to Dev Manager</label>
+            </value>
+            <value>
+                <fullName>Dev Leader Accept</fullName>
+                <default>false</default>
+                <label>Dev Leader Accept</label>
+            </value>
+            <value>
+                <fullName>Proposal &amp; CV preparing</fullName>
+                <default>false</default>
+                <label>Proposal &amp; CV preparing</label>
+            </value>
+            <value>
+                <fullName>Request Dev Manager Review</fullName>
+                <default>false</default>
+                <label>Request Dev Manager Review</label>
+            </value>
+            <value>
+                <fullName>Approved Dev Manager</fullName>
+                <default>false</default>
+                <label>Approved Dev Manager</label>
+            </value>
+            <value>
+                <fullName>Tender Updating</fullName>
+                <default>false</default>
+                <label>Tender Updating</label>
+            </value>
+            <value>
+                <fullName>Pending Dev Manager Approval (Rework)</fullName>
+                <default>false</default>
+                <label>Pending Dev Manager Approval (Rework)</label>
+            </value>
+            <value>
+                <fullName>Approved After Rework</fullName>
+                <default>false</default>
+                <label>Approved After Rework</label>
+            </value>
+            <value>
+                <fullName>Waiting for Customer Feedback</fullName>
+                <default>false</default>
+                <label>Waiting for Customer Feedback</label>
+            </value>
+            <value>
+                <fullName>Rework Required</fullName>
+                <default>false</default>
+                <label>Rework Required</label>
+            </value>
+            <value>
+                <fullName>On Hold - Customer Side</fullName>
+                <default>false</default>
+                <label>On Hold - Customer Side</label>
+            </value>
+            <value>
+                <fullName>On Hold - Internal Decision</fullName>
+                <default>false</default>
+                <label>On Hold - Internal Decision</label>
+            </value>
+            <value>
+                <fullName>On Hold - Resource Unavailable</fullName>
+                <default>false</default>
+                <label>On Hold - Resource Unavailable</label>
+            </value>
+            <value>
+                <fullName>On Hold - Budget Pending</fullName>
+                <default>false</default>
+                <label>On Hold - Budget Pending</label>
+            </value>
+            <value>
+                <fullName>Cancelled - Internal Decision</fullName>
+                <default>false</default>
+                <label>Cancelled - Internal Decision</label>
+            </value>
+            <value>
+                <fullName>Cancelled - Customer Withdrawn</fullName>
+                <default>false</default>
+                <label>Cancelled - Customer Withdrawn</label>
+            </value>
+            <value>
+                <fullName>Won</fullName>
+                <default>false</default>
+                <label>Won</label>
+            </value>
+            <value>
+                <fullName>Lost</fullName>
+                <default>false</default>
+                <label>Lost</label>
+            </value>
+            <value>
+                <fullName>Customer Feedback Received</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Customer Feedback Received</label>
+            </value>
+            <value>
+                <fullName>Waiting for Candidate Interview</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Waiting for Candidate Interview</label>
+            </value>
+            <value>
+                <fullName>Waiting for Customer Price Review</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Waiting for Customer Price Review</label>
+            </value>
+            <value>
+                <fullName>Waiting for Customer Proposal Review</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Waiting for Customer Proposal Review</label>
+            </value>
+            <value>
+                <fullName>Waiting for Interview Result</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Waiting for Interview Result</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,31 @@
+<template>
+    <div class="slds-p-around_medium">
+        <h2 class="slds-text-heading_medium slds-m-bottom_small">
+            Xác nhận
+        </h2>
+
+        <p class="slds-m-bottom_medium">
+            {message}
+        </p>
+
+        <div class="slds-text-align_right">
+            <lightning-button
+                label="Cancel"
+                onclick={handleCancel}
+                disabled={isLoading}>
+            </lightning-button>
+
+            <lightning-button
+                variant="brand"
+                class="slds-m-left_small"
+                label="Confirm"
+                onclick={handleConfirm}
+                disabled={isLoading}>
+            </lightning-button>
+        </div>
+
+        <template if:true={isLoading}>
+            <lightning-spinner size="small"></lightning-spinner>
+        </template>
+    </div>
+</template>

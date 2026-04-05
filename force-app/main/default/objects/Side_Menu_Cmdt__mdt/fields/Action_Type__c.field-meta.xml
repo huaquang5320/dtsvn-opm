@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Action_Type__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Action_Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ListView</fullName>
+                <default>true</default>
+                <label>ListView</label>
+            </value>
+            <value>
+                <fullName>New Create</fullName>
+                <default>false</default>
+                <label>New Create</label>
+            </value>
+            <value>
+                <fullName>RecordPage</fullName>
+                <default>false</default>
+                <label>RecordPage</label>
+            </value>
+            <value>
+                <fullName>Flow</fullName>
+                <default>false</default>
+                <label>Flow</label>
+            </value>
+            <value>
+                <fullName>URL</fullName>
+                <default>false</default>
+                <label>URL</label>
+            </value>
+            <value>
+                <fullName>NavItem</fullName>
+                <default>false</default>
+                <label>NavItem</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

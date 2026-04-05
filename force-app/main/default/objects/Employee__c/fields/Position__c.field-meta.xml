@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Position__c</fullName>
+    <label>Position</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Manager</fullName>
+                <default>false</default>
+                <label>Manager</label>
+            </value>
+            <value>
+                <fullName>Sale</fullName>
+                <default>false</default>
+                <label>Sale</label>
+            </value>
+            <value>
+                <fullName>Dev</fullName>
+                <default>false</default>
+                <label>Dev</label>
+            </value>
+            <value>
+                <fullName>Assistant Manager</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Assistant Manager</label>
+            </value>
+            <value>
+                <fullName>Dev Leader</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Dev Leader</label>
+            </value>
+            <value>
+                <fullName>Dev Manager</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Dev Manager</label>
+            </value>
+            <value>
+                <fullName>Leader</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Leader</label>
+            </value>
+            <value>
+                <fullName>Sales Leader</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sales Leader</label>
+            </value>
+            <value>
+                <fullName>Sales Manager</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sales Manager</label>
+            </value>
+            <value>
+                <fullName>Senior Staff</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Senior Staff</label>
+            </value>
+            <value>
+                <fullName>Staff</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Staff</label>
+            </value>
+            <value>
+                <fullName>Sub-Leader</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sub-Leader</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

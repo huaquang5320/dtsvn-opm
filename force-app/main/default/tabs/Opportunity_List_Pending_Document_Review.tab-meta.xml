@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Created by Lightning App Builder</description>
+    <flexiPage>Danh_s_ch_c_h_i_c_n_duy_t_t_i_li_u</flexiPage>
+    <label>Danh sách cơ hội cần duyệt tài liệu</label>
+    <motif>Custom78: Map</motif>
+</CustomTab>

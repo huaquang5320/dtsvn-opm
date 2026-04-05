@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Approved List</label>
+    <protected>false</protected>
+    <values>
+        <field>Action_Type__c</field>
+        <value xsi:type="xsd:string">NavItem</value>
+    </values>
+    <values>
+        <field>Action_Value__c</field>
+        <value xsi:type="xsd:string">Approved_List</value>
+    </values>
+    <values>
+        <field>Is_Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Label_Key__c</field>
+        <value xsi:type="xsd:string">Danh sách cơ hội đã phê duyệt</value>
+    </values>
+    <values>
+        <field>Required_Custom_Permissions__c</field>
+        <value xsi:type="xsd:string">Access_Opportunity_Initiation; PS_Approve_Opportunity_By_SaleManager</value>
+    </values>
+    <values>
+        <field>Sort_Order__c</field>
+        <value xsi:type="xsd:double">30.0</value>
+    </values>
+    <values>
+        <field>Stage__c</field>
+        <value xsi:type="xsd:string">Phê duyệt cơ hội</value>
+    </values>
+</CustomMetadata>

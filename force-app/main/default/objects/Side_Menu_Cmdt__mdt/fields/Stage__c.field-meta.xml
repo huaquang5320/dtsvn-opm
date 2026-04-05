@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Stage</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Closed Won</fullName>
+                <default>true</default>
+                <label>Closed Won</label>
+            </value>
+            <value>
+                <fullName>Closed Lost</fullName>
+                <default>false</default>
+                <label>Closed Lost</label>
+            </value>
+            <value>
+                <fullName>Khởi tạo cơ hội</fullName>
+                <default>false</default>
+                <label>Khởi tạo cơ hội</label>
+            </value>
+            <value>
+                <fullName>Thẩm định cơ hội</fullName>
+                <default>false</default>
+                <label>Thẩm định cơ hội</label>
+            </value>
+            <value>
+                <fullName>Phê duyệt cơ hội</fullName>
+                <default>false</default>
+                <label>Phê duyệt cơ hội</label>
+            </value>
+            <value>
+                <fullName>Đánh giá tiếp nhận cơ hội</fullName>
+                <default>false</default>
+                <label>Đánh giá tiếp nhận cơ hội</label>
+            </value>
+            <value>
+                <fullName>Chuẩn bị Proposal/Báo giá &amp; CV</fullName>
+                <default>false</default>
+                <label>Chuẩn bị Proposal/Báo giá &amp; CV</label>
+            </value>
+            <value>
+                <fullName>Chờ khách hàng đánh giá</fullName>
+                <default>false</default>
+                <label>Chờ khách hàng đánh giá</label>
+            </value>
+            <value>
+                <fullName>Bảo lưu cơ hội</fullName>
+                <default>false</default>
+                <label>Bảo lưu cơ hội</label>
+            </value>
+            <value>
+                <fullName>Hủy cơ hội</fullName>
+                <default>false</default>
+                <label>Hủy cơ hội</label>
+            </value>
+            <value>
+                <fullName>Kết thúc cơ hội</fullName>
+                <default>false</default>
+                <label>Kết thúc cơ hội</label>
+            </value>
+            <value>
+                <fullName>Thống kê</fullName>
+                <default>false</default>
+                <label>Thống kê</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,35 @@
+# List files or directories below to ignore them when running force:source:push, force:source:pull, and force:source:status
+# More information: https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_exclude_source.htm
+#
+
+package.xml
+
+# LWC configuration files
+**/jsconfig.json
+**/.eslintrc.json
+
+# LWC Jest
+**/__tests__/**
+
+node_modules/
+
+# Profiles requiring Guest User License (not available on target org)
+**/profiles/Guest License User.profile-meta.xml
+**/profiles/testmk Profile.profile-meta.xml
+
+# Site ApexPages (require Communities/Digital Experiences to be enabled)
+**/pages/BandwidthExceeded.*
+**/pages/ChangePassword.*
+**/pages/CommunitiesSelfRegConfirm.*
+**/pages/Exception.*
+**/pages/FileNotFound.*
+**/pages/ForgotPassword.*
+**/pages/ForgotPasswordConfirm.*
+**/pages/InMaintenance.*
+**/pages/SiteLogin.*
+**/pages/SiteRegister.*
+**/pages/SiteRegisterConfirm.*
+**/pages/SiteTemplate.*
+**/pages/StdExceptionTemplate.*
+**/pages/Unauthorized.*
+**/pages/UnderConstruction.*

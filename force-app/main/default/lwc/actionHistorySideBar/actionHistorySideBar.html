@@ -1,0 +1,170 @@
+<template>
+  <lightning-card title="Action History">
+    <div slot="actions" class="slds-button-group" role="group">
+      <lightning-button-menu
+        alternative-text="Sort"
+        icon-name="utility:sort"
+        menu-alignment="right"
+        onselect={handleSortSelect}
+      >
+        <lightning-menu-item
+          value="NEWEST"
+          label="Newest first"
+        ></lightning-menu-item>
+        <lightning-menu-item
+          value="OLDEST"
+          label="Oldest first"
+        ></lightning-menu-item>
+      </lightning-button-menu>
+
+      <lightning-button-menu
+        alternative-text="Filter"
+        icon-name="utility:filterList"
+        menu-alignment="right"
+        onselect={handleFilterSelect}
+      >
+        <lightning-menu-item value="ALL" label="All"></lightning-menu-item>
+        <lightning-menu-item
+          value="STATUS"
+          label="Status changes"
+        ></lightning-menu-item>
+        <lightning-menu-item
+          value="STAGE"
+          label="Stage changes"
+        ></lightning-menu-item>
+        <lightning-menu-item
+          value="CREATED"
+          label="Created only"
+        ></lightning-menu-item>
+      </lightning-button-menu>
+
+      <lightning-button-menu
+        alternative-text="Limit"
+        icon-name="utility:rows"
+        menu-alignment="right"
+        onselect={handleLimitSelect}
+      >
+        <lightning-menu-item value="10" label="10"></lightning-menu-item>
+        <lightning-menu-item value="20" label="20"></lightning-menu-item>
+        <lightning-menu-item value="30" label="30"></lightning-menu-item>
+        <lightning-menu-item value="50" label="50"></lightning-menu-item>
+        <lightning-menu-item value="100" label="100"></lightning-menu-item>
+        <lightning-menu-item value="ALL" label="All"></lightning-menu-item>
+      </lightning-button-menu>
+    </div>
+
+    <div
+      class="slds-p-horizontal_small slds-text-body_small slds-text-color_weak"
+    >
+      <template if:true={subtitle}>{subtitle}</template>
+    </div>
+
+    <div class="slds-p-around_small">
+      <template if:true={isLoading}>
+        <lightning-spinner size="small"></lightning-spinner>
+      </template>
+
+      <template if:true={hasItems}>
+        <ul class="slds-timeline">
+          <template for:each={items} for:item="it">
+            <li key={it.id}>
+              <div class="slds-timeline__item slds-timeline__item_task">
+                <span class="slds-assistive-text">{it.actionType}</span>
+
+                <div class="slds-media">
+                  <div class="slds-media__figure">
+                    <lightning-icon
+                      icon-name={it.iconName}
+                      size="small"
+                    ></lightning-icon>
+                  </div>
+
+                  <div class="slds-media__body">
+                    <div
+                      class="slds-grid slds-grid_align-spread slds-grid_vertical-align-center"
+                    >
+                      <div class="slds-truncate">
+                        <span
+                          class="slds-text-heading_small slds-text-title_bold"
+                          >{it.title}</span
+                        >
+                      </div>
+                      <div
+                        class="slds-text-body_small slds-text-color_weak slds-no-flex slds-p-left_small"
+                      >
+                        <lightning-formatted-date-time
+                          value={it.actionTime}
+                          year="numeric"
+                          month="short"
+                          day="2-digit"
+                          hour="2-digit"
+                          minute="2-digit"
+                        >
+                        </lightning-formatted-date-time>
+                      </div>
+                    </div>
+
+                    <div
+                      class="slds-text-body_small slds-text-color_weak slds-m-top_xx-small"
+                    >
+                      <template if:true={it.performedByUserName}>
+                        by
+                        <a href={it.performedByUserUrl} target="_blank"
+                          >{it.performedByUserName}</a
+                        >
+                      </template>
+                      <template if:true={it.performedByEmployeeName}>
+                        <span class="slds-p-horizontal_x-small">•</span>
+                        <a href={it.performedByEmployeeUrl} target="_blank"
+                          >{it.performedByEmployeeName}</a
+                        >
+                      </template>
+                    </div>
+
+                    <div class="slds-m-top_small">
+                      <template if:true={it.showStatusChange}>
+                        <div class="slds-text-body_small">
+                          <span class="slds-text-color_weak">Status:</span>
+                          <span class="slds-p-left_x-small"
+                            >{it.oldStatus}</span
+                          >
+                          <span class="slds-p-horizontal_x-small">→</span>
+                          <span class="slds-text-title_bold"
+                            >{it.newStatus}</span
+                          >
+                        </div>
+                      </template>
+
+                      <template if:true={it.showStageChange}>
+                        <div class="slds-text-body_small slds-m-top_xx-small">
+                          <span class="slds-text-color_weak">Stage:</span>
+                          <span class="slds-p-left_x-small">{it.oldStage}</span>
+                          <span class="slds-p-horizontal_x-small">→</span>
+                          <span class="slds-text-title_bold"
+                            >{it.newStage}</span
+                          >
+                        </div>
+                      </template>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </template>
+        </ul>
+      </template>
+
+      <template if:true={showEmptyState}>
+        <div
+          class="slds-text-align_center slds-p-vertical_large slds-text-color_weak"
+        >
+          No action histories yet
+        </div>
+      </template>
+
+      <template if:true={errorMessage}>
+        <div class="slds-text-color_error slds-m-top_small">{errorMessage}</div>
+      </template>
+    </div>
+  </lightning-card>
+</template>

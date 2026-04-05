@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estimated_Screens__c</fullName>
+    <description>Số màn hình ước tính (số nguyên đại diện số lượng màn hình).</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Số màn hình ước tính (số nguyên đại diện số lượng màn hình).</inlineHelpText>
+    <label>Estimated Screens</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

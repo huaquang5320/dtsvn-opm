@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Accept_Opportunity</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Accept Opportunity</shortDescription>
+        <value>Chấp nhận cơ hội</value>
+    </labels>
+    <labels>
+        <fullName>Accepted_List</fullName>
+        <categories>Menu</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Accepted List</shortDescription>
+        <value>Danh sách đã tiếp nhận</value>
+    </labels>
+    <labels>
+        <fullName>Accepted_Person</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Accepted Person</shortDescription>
+        <value>Người Tiếp nhận</value>
+    </labels>
+    <labels>
+        <fullName>Approve_Proposal_Quote_Cv_Confirmation</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Approve Proposal/Quote Cv Confirmation</shortDescription>
+        <value>Xác nhận duyệt CV</value>
+    </labels>
+    <labels>
+        <fullName>Approve_Proposal_Quote_Cv_Success</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Approve Proposal/Quote Cv Success</shortDescription>
+        <value>Duyệt CV</value>
+    </labels>
+    <labels>
+        <fullName>Approved_List</fullName>
+        <categories>Menu</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Approved List</shortDescription>
+        <value>Danh sách đã duyệt</value>
+    </labels>
+    <labels>
+        <fullName>Assigned_Dev_Leader</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Assigned Dev Leader</shortDescription>
+        <value>Chọn Dev Leader</value>
+    </labels>
+    <labels>
+        <fullName>Assigned_Dev_Leader_Success_Message</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Assigned Dev Leader Success Message</shortDescription>
+        <value>Chỉ định Dev Leader</value>
+    </labels>
+    <labels>
+        <fullName>Assigned_Dev_Manager</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Assigned Dev Manager</shortDescription>
+        <value>Chỉ định thành công Dev Manager</value>
+    </labels>
+    <labels>
+        <fullName>CV_Update_Confirmation</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>CV Update Confirmation</shortDescription>
+        <value>Chuyển trạng thái : Cập nhập CV</value>
+    </labels>
+    <labels>
+        <fullName>Cancel_Status</fullName>
+        <categories>Menu</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Cancel Status</shortDescription>
+        <value>Tình trạng hủy</value>
+    </labels>
+    <labels>
+        <fullName>Closure_Status</fullName>
+        <categories>Menu</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Closure Status</shortDescription>
+        <value>Tình trạng kết thúc</value>
+    </labels>
+    <labels>
+        <fullName>Comment</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Comment</shortDescription>
+        <value>Comment</value>
+    </labels>
+    <labels>
+        <fullName>Confirm_Message</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Confirm Message</shortDescription>
+        <value>Có chắc chắn muốn xác nhận cơ hội</value>
+    </labels>
+    <labels>
+        <fullName>Confirm_Success</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Confirm Success</shortDescription>
+        <value>Đã xác nhận cơ hội thành công</value>
+    </labels>
+    <labels>
+        <fullName>Confirmation_Message</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Confirmation Message</shortDescription>
+        <value>Có chắc chắn muốn thực hiện thao tác này không ?</value>
+    </labels>
+    <labels>
+        <fullName>Create_New_Opportunity</fullName>
+        <categories>Menu</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Create New Opportunity</shortDescription>
+        <value>Tạo mới cơ hội</value>
+    </labels>
+    <labels>
+        <fullName>Customer_Review_Status</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Customer Review Status</shortDescription>
+        <value>Status khách hàng đánh giá</value>
+    </labels>
+    <labels>
+        <fullName>Dev_Leader_Rejected_List</fullName>
+        <categories>Menu</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Dev Leader Rejected List</shortDescription>
+        <value>Danh sách cơ hội bị Dev Leader từ chối</value>
+    </labels>
+    <labels>
+        <fullName>Dev_Manager_Picklist</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Dev Manager Picklist</shortDescription>
+        <value>Chọn Dev Manager</value>
+    </labels>
+    <labels>
+        <fullName>Dev_Reject_Success</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Dev Reject Success</shortDescription>
+        <value>Đã từ chối thành công cơ hội</value>
+    </labels>
+    <labels>
+        <fullName>Edit_Request_Final_Message</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Edit Request Final Message</shortDescription>
+        <value>Yêu cầu chỉnh sửa đã được gửi thành công</value>
+    </labels>
+    <labels>
+        <fullName>Flow_Close_Status_Label</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Flow_Close_Status_Label</shortDescription>
+        <value>Status Kết Thúc</value>
+    </labels>
+    <labels>
+        <fullName>Hold_Status</fullName>
+        <categories>Menu</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Hold Status</shortDescription>
+        <value>Tình trạng bảo lưu</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_List</fullName>
+        <categories>Menu</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Opportunity List</shortDescription>
+        <value>Danh sách cơ hội</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_List_Pending_Document_Review</fullName>
+        <categories>Menu</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Opportunity List Pending Document Review</shortDescription>
+        <value>Danh sách cơ hội cần duyệt tài liệu</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_List_with_Approved_Documents</fullName>
+        <categories>Menu</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Opportunity List with Approved Documents</shortDescription>
+        <value>Danh sách cơ hội đã duyệt tài liệu</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_List_with_Leader_Feedback</fullName>
+        <categories>Menu</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Opportunity List with Leader Feedback</shortDescription>
+        <value>Danh sách cơ hội có feedback từ Leader</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_List_with_Manager_Feedback</fullName>
+        <categories>Menu</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Opportunity List with Manager Feedback</shortDescription>
+        <value>Danh sách cơ hội có feedback từ Manager</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_Status</fullName>
+        <categories>Menu</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Opportunity Status</shortDescription>
+        <value>Tình trạng cơ hội</value>
+    </labels>
+    <labels>
+        <fullName>Pending_Acceptance_List</fullName>
+        <categories>Menu</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Pending Acceptance List</shortDescription>
+        <value>Danh sách chờ tiếp nhận</value>
+    </labels>
+    <labels>
+        <fullName>Pending_Approval_List</fullName>
+        <categories>Menu</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Pending Approval List</shortDescription>
+        <value>Danh sách chờ duyệt</value>
+    </labels>
+    <labels>
+        <fullName>Pending_Review_List</fullName>
+        <categories>Menu</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Pending Review List</shortDescription>
+        <value>Danh sách chờ thẩm định</value>
+    </labels>
+    <labels>
+        <fullName>Proposal_Picklist</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Proposal Picklist</shortDescription>
+        <value>Lựa chọn đề xuất</value>
+    </labels>
+    <labels>
+        <fullName>Proposal_Update_Confirmation</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Proposal Update Confirmation</shortDescription>
+        <value>Xác định cập nhập đề xuất</value>
+    </labels>
+    <labels>
+        <fullName>Proposal_Update_Success</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Proposal Update Success</shortDescription>
+        <value>Đề xuất đã được cập nhập</value>
+    </labels>
+    <labels>
+        <fullName>Quote_Picklist</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Quote Picklist</shortDescription>
+        <value>Lựa chọn báo giá</value>
+    </labels>
+    <labels>
+        <fullName>Quote_Update_Confirmation</fullName>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Quote Update Confirmation</shortDescription>
+        <value>Xác định cập nhập báo giá</value>
+    </labels>
+    <labels>
+        <fullName>Quote_Update_Success</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Quote Update Success</shortDescription>
+        <value>Cập nhập báo giá</value>
+    </labels>
+    <labels>
+        <fullName>Reason</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Reason</shortDescription>
+        <value>Lý do</value>
+    </labels>
+    <labels>
+        <fullName>Reject_Opportunity</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Reject Opportunity</shortDescription>
+        <value>Xác nhận từ chối cơ hội</value>
+    </labels>
+    <labels>
+        <fullName>Rejecting_Person</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Rejecting Person</shortDescription>
+        <value>Người từ chối</value>
+    </labels>
+    <labels>
+        <fullName>Request_Approve_Proposal_Cv_Confirmation</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Request Approve Proposal Cv Confirmation</shortDescription>
+        <value>Xin phê duyệt tài liệu CV</value>
+    </labels>
+    <labels>
+        <fullName>Request_Approve_Proposal_Cv_Success</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Request Approve Proposal Cv Success</shortDescription>
+        <value>XIn phê duyệt</value>
+    </labels>
+    <labels>
+        <fullName>Request_Proposal_Quote_Cv_Update_Confirmation</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Request Proposal/Quote Cv Update Confirmation</shortDescription>
+        <value>Yêu cầu chỉnh sửa CV</value>
+    </labels>
+    <labels>
+        <fullName>Reviewed_List</fullName>
+        <categories>Menu</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Reviewed List</shortDescription>
+        <value>Danh sách đã thẩm định</value>
+    </labels>
+    <labels>
+        <fullName>SearchLoading_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Loading text during search</shortDescription>
+        <value>Searching...</value>
+    </labels>
+    <labels>
+        <fullName>SearchPlaceholder_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search input placeholder text</shortDescription>
+        <value>Search Opportunities, Accounts, Candidates...</value>
+    </labels>
+    <labels>
+        <fullName>SearchResultHeader_Accounts</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search result header for Accounts</shortDescription>
+        <value>Accounts</value>
+    </labels>
+    <labels>
+        <fullName>SearchResultHeader_Candidates</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search result header for Candidates</shortDescription>
+        <value>Candidates</value>
+    </labels>
+    <labels>
+        <fullName>SearchResultHeader_Employees</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search result header for Employees</shortDescription>
+        <value>Employees</value>
+    </labels>
+    <labels>
+        <fullName>SearchResultHeader_Opportunities</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search result header for Opportunities</shortDescription>
+        <value>Opportunities</value>
+    </labels>
+    <labels>
+        <fullName>SearchResult_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search error message</shortDescription>
+        <value>Search error</value>
+    </labels>
+    <labels>
+        <fullName>SearchResult_NoResults</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Message when no results found</shortDescription>
+        <value>No results found</value>
+    </labels>
+    <labels>
+        <fullName>Status</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Status</shortDescription>
+        <value>Trạng thái</value>
+    </labels>
+    <labels>
+        <fullName>Success</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Success</shortDescription>
+        <value>thành công</value>
+    </labels>
+    <labels>
+        <fullName>Update_Opportunity_Documents</fullName>
+        <categories>Menu</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Update Opportunity Documents</shortDescription>
+        <value>Cập nhật tài liệu cho cơ hội</value>
+    </labels>
+    <labels>
+        <fullName>Update_Status_Message</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>true</protected>
+        <shortDescription>Update Status Message</shortDescription>
+        <value>Cập nhập trạng thái</value>
+    </labels>
+    <labels>
+        <fullName>Select_Sales_Manager</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>false</protected>
+        <shortDescription>Select Sales Manager</shortDescription>
+        <value>Chọn Sales Manager</value>
+    </labels>
+    <labels>
+        <fullName>Select_Sales_Leader</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>false</protected>
+        <shortDescription>Select Sales Leader</shortDescription>
+        <value>Chọn Sales Leader</value>
+    </labels>
+    <labels>
+        <fullName>Select_Sales_PIC</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>false</protected>
+        <shortDescription>Select Sales PIC</shortDescription>
+        <value>Chọn Sales PIC</value>
+    </labels>
+    <labels>
+        <fullName>Select_Sales_Role</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>false</protected>
+        <shortDescription>Select Sales Role</shortDescription>
+        <value>Chọn vai trò Sales</value>
+    </labels>
+    <labels>
+        <fullName>Revision_Reason</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>false</protected>
+        <shortDescription>Revision Reason</shortDescription>
+        <value>Lý do chỉnh sửa</value>
+    </labels>
+    <labels>
+        <fullName>Close_Opportunity_Reason</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>false</protected>
+        <shortDescription>Close Opportunity Reason</shortDescription>
+        <value>Lý do đóng cơ hội</value>
+    </labels>
+    <labels>
+        <fullName>Close_Reason</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>false</protected>
+        <shortDescription>Close Reason</shortDescription>
+        <value>Lý do đóng</value>
+    </labels>
+    <labels>
+        <fullName>Not_Responsible_Person</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>false</protected>
+        <shortDescription>Not Responsible Person</shortDescription>
+        <value>Không phải người phụ trách</value>
+    </labels>
+    <labels>
+        <fullName>Request_Revision</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>false</protected>
+        <shortDescription>Request Revision</shortDescription>
+        <value>Yêu cầu chỉnh sửa</value>
+    </labels>
+    <labels>
+        <fullName>Close_Opportunity_Choice</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>false</protected>
+        <shortDescription>Close Opportunity Choice</shortDescription>
+        <value>Đóng cơ hội</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_Action_Label</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Action Label</shortDescription>
+        <value>Cách xử lý cơ hội</value>
+    </labels>
+    <labels>
+        <fullName>Customer_Feedback</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>false</protected>
+        <shortDescription>Customer Feedback</shortDescription>
+        <value>Phản hồi từ khách hàng</value>
+    </labels>
+    <labels>
+        <fullName>Need_Revision_Question</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>false</protected>
+        <shortDescription>Need Revision Question</shortDescription>
+        <value>Cần bổ sung/chỉnh sửa ?</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_Result</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Result</shortDescription>
+        <value>Kết quả cơ hội</value>
+    </labels>
+    <labels>
+        <fullName>Lost_Reason</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>false</protected>
+        <shortDescription>Lost Reason</shortDescription>
+        <value>Lý do thất bại với cơ hội này</value>
+    </labels>
+    <labels>
+        <fullName>Approve_Opportunity_Choice</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>false</protected>
+        <shortDescription>Approve Opportunity Choice</shortDescription>
+        <value>Duyệt cơ hội</value>
+    </labels>
+    <labels>
+        <fullName>Assign_Dev_Manager_Choice</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>false</protected>
+        <shortDescription>Assign Dev Manager Choice</shortDescription>
+        <value>Chỉ định Dev Manager</value>
+    </labels>
+    <labels>
+        <fullName>Status_Update_Success</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>false</protected>
+        <shortDescription>Status Update Success</shortDescription>
+        <value>Cập nhật trạng thái thành công!</value>
+    </labels>
+    <labels>
+        <fullName>Dev_Manager_Accepted_Success</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>false</protected>
+        <shortDescription>Dev Manager Accepted Success</shortDescription>
+        <value>Dev Manager đã tiếp nhận cơ hội thành công.</value>
+    </labels>
+    <labels>
+        <fullName>Dev_Leader_Accepted_Success</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>false</protected>
+        <shortDescription>Dev Leader Accepted Success</shortDescription>
+        <value>Dev Leader đã tiếp nhận cơ hội thành công.</value>
+    </labels>
+    <labels>
+        <fullName>Assigned_To_Dev_Manager_Success</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>false</protected>
+        <shortDescription>Assigned To Dev Manager Success</shortDescription>
+        <value>Cơ hội đã được chỉ định thành công cho Dev Manager!</value>
+    </labels>
+    <labels>
+        <fullName>Revision_Request_Reason</fullName>
+        <categories>Flow</categories>
+        <language>vi</language>
+        <protected>false</protected>
+        <shortDescription>Revision Request Reason</shortDescription>
+        <value>Lý do yêu cầu chỉnh sửa</value>
+    </labels>
+</CustomLabels>

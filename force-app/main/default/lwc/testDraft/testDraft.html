@@ -1,0 +1,243 @@
+<template>
+  <lightning-card title="Edit">
+    <div class="slds-p-around_medium">
+      <template if:true={loading}>
+        <lightning-spinner alternative-text="Loading"></lightning-spinner>
+      </template>
+
+      <!-- OVERVIEW -->
+      <div class="slds-text-title_bold slds-m-bottom_small">Overview</div>
+      <div class="slds-grid slds-wrap slds-gutters">
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-input
+            label="Opportunity Name"
+            value={oppName}
+            onchange={onOppNameChange}
+            required
+          ></lightning-input>
+        </div>
+
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-record-picker
+            label="Account"
+            placeholder="Search Account..."
+            object-api-name="Account"
+            value={accountId}
+            onchange={onAccountChange}
+            required
+          ></lightning-record-picker>
+        </div>
+
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-combobox
+            label="Industry"
+            value={industry}
+            options={industryOptions}
+            onchange={onIndustryChange}
+          ></lightning-combobox>
+        </div>
+
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-input
+            type="number"
+            label="Amount"
+            value={amount}
+            step="0.01"
+            onchange={onAmountChange}
+          ></lightning-input>
+        </div>
+
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-input
+            type="date"
+            label="Close Date"
+            value={closeDate}
+            onchange={onCloseDateChange}
+          ></lightning-input>
+        </div>
+
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-input
+            label="Currency"
+            value={currencyIsoCode}
+            options={currencyOptions}
+            onchange={onCurrencyChange}
+          ></lightning-input>
+        </div>
+      </div>
+
+      <div class="slds-m-vertical_medium slds-border_bottom"></div>
+
+      <!-- CONTENT -->
+      <div class="slds-text-title_bold slds-m-bottom_small">Content</div>
+      <div class="slds-grid slds-wrap slds-gutters">
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-textarea
+            label="Short Description"
+            value={shortDescription}
+            onchange={onShortDescriptionChange}
+          ></lightning-textarea>
+        </div>
+
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-textarea
+            label="Quick Context"
+            value={quickContext}
+            onchange={onQuickContextChange}
+          ></lightning-textarea>
+        </div>
+
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-textarea
+            label="Feature Categories"
+            value={featureCategories}
+            onchange={onFeatureCategoriesChange}
+          ></lightning-textarea>
+        </div>
+
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-textarea
+            label="Tech Stack"
+            value={techStack}
+            onchange={onTechStackChange}
+          ></lightning-textarea>
+        </div>
+
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-combobox
+            label="Pricing Model"
+            value={pricingModel}
+            options={pricingModelOptions}
+            onchange={onPricingModelChange}
+          ></lightning-combobox>
+        </div>
+
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-combobox
+            label="Delivery Model"
+            value={deliveryModel}
+            options={deliveryModelOptions}
+            onchange={onDeliveryModelChange}
+          ></lightning-combobox>
+        </div>
+
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-input
+            type="number"
+            label="Estimated Screens"
+            value={estimatedScreens}
+            onchange={onEstimatedScreensChange}
+            min="0"
+          ></lightning-input>
+        </div>
+
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-input
+            type="number"
+            label="Estimated APIs"
+            value={estimatedApis}
+            onchange={onEstimatedApisChange}
+            min="0"
+          ></lightning-input>
+        </div>
+
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-input
+            type="number"
+            label="Team Size Expected"
+            value={teamSizeExpected}
+            onchange={onTeamSizeChange}
+            min="0"
+          ></lightning-input>
+        </div>
+
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-input
+            type="date"
+            label="Expected Start Date"
+            value={expectedStartDate}
+            onchange={onExpectedStartDateChange}
+          ></lightning-input>
+        </div>
+
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-input
+            type="date"
+            label="Expected End Date"
+            value={expectedEndDate}
+            onchange={onExpectedEndDateChange}
+          ></lightning-input>
+        </div>
+
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-input
+            type="checkbox"
+            label="Has Requirement Document"
+            checked={hasRequirementDocument}
+            onchange={onHasRequirementDocumentChange}
+          ></lightning-input>
+        </div>
+
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-input
+            type="checkbox"
+            label="Need Proposal"
+            checked={needProposal}
+            onchange={onNeedProposalChange}
+          ></lightning-input>
+        </div>
+      </div>
+
+      <div class="slds-m-vertical_medium slds-border_bottom"></div>
+
+      <!-- ADDITIONAL INFORMATION -->
+      <div class="slds-text-title_bold slds-m-bottom_small">
+        Additional Information
+      </div>
+      <div class="slds-grid slds-wrap slds-gutters">
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-combobox
+            label="Risk Level"
+            value={riskLevel}
+            options={riskLevelOptions}
+            onchange={onRiskLevelChange}
+          ></lightning-combobox>
+        </div>
+
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-textarea
+            label="Risk Categories"
+            value={riskCategories}
+            onchange={onRiskCategoriesChange}
+          ></lightning-textarea>
+        </div>
+
+        <div class="slds-col slds-size_1-of-1">
+          <lightning-textarea
+            label="Customer Concerns"
+            value={customerConcerns}
+            onchange={onCustomerConcernsChange}
+          ></lightning-textarea>
+        </div>
+      </div>
+
+      <!-- ACTIONS -->
+      <div class="slds-m-top_medium slds-text-align_right">
+        <lightning-button
+          label="Save as Draft"
+          variant="neutral"
+          onclick={saveAsDraft}
+          disabled={loading}
+        ></lightning-button>
+
+        <lightning-button
+          class="slds-m-left_small"
+          label="Save"
+          variant="brand"
+          onclick={sendForApproval}
+          disabled={loading}
+        ></lightning-button>
+      </div>
+    </div>
+  </lightning-card>
+</template>

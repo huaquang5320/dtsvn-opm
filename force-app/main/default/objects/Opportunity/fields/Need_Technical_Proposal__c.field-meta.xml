@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Need_Technical_Proposal__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Có cần nộp đề xuất kĩ thuật cho khách hàng không.</description>
+    <inlineHelpText>Có cần nộp kĩ thuật cho khách hàng không.</inlineHelpText>
+    <label>Need Technical Proposal</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

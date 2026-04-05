@@ -1,0 +1,165 @@
+<template>
+    <div class="search-container">
+
+        <!-- ===== Search Bar with Chips ===== -->
+        <div class="search-bar" onclick={focusInput}>
+            <!-- Filter Chips -->
+            <template for:each={chips} for:item="chip">
+                <span class={chip.chipClass} key={chip.key} title={chip.name}>
+                    <span class="chip-badge">{chip.typeBadge}</span>
+                    <span class="chip-label">{chip.name}</span>
+                    <button
+                        class="chip-remove"
+                        data-chip-key={chip.key}
+                        onclick={handleRemoveChip}
+                        title="Xóa"
+                    >×</button>
+                </span>
+            </template>
+
+            <!-- Text Input -->
+            <input
+                type="text"
+                class="search-input"
+                placeholder={inputPlaceholder}
+                value={currentInput}
+                oninput={handleInput}
+                onfocus={handleFocus}
+                onblur={handleBlur}
+                onkeydown={handleKeyDown}
+                data-input="search"
+                aria-label="Tìm kiếm"
+            />
+
+            <!-- Loading Spinner -->
+            <template if:true={isLoadingSuggestions}>
+                <span class="spinner" role="status"></span>
+            </template>
+
+            <!-- Search Icon -->
+            <span class="search-icon">🔍</span>
+        </div>
+
+        <!-- ===== Suggestion Dropdown (while typing) ===== -->
+        <template if:true={showSuggestions}>
+            <div class="suggestions-dropdown">
+                <template if:true={hasSuggestions}>
+                    <ul class="suggestions-list">
+                        <template for:each={suggestions} for:item="item">
+                            <template if:true={item.isHeader}>
+                                <li key={item.key} class="suggestion-header">
+                                    {item.label}
+                                    <span class="header-count">({item.count})</span>
+                                </li>
+                            </template>
+                            <template if:false={item.isHeader}>
+                                <li
+                                    key={item.key}
+                                    class="suggestion-item"
+                                    data-id={item.id}
+                                    data-type={item.type}
+                                    data-name={item.name}
+                                    data-subtitle={item.subtitle}
+                                    onmousedown={handleSuggestionSelect}
+                                    role="option"
+                                >
+                                    <div class="suggestion-name">{item.name}</div>
+                                    <template if:true={item.subtitle}>
+                                        <div class="suggestion-subtitle">{item.subtitle}</div>
+                                    </template>
+                                </li>
+                            </template>
+                        </template>
+                    </ul>
+                    <!-- Hint when typing -->
+                    <div class="suggestion-hint">
+                        Nhấn <kbd>Enter</kbd> để tìm kiếm theo từ khóa, hoặc chọn một kết quả để thêm điều kiện
+                    </div>
+                </template>
+                <template if:false={hasSuggestions}>
+                    <div class="no-suggestions">Không tìm thấy kết quả cho "<b>{currentInput}</b>"</div>
+                </template>
+            </div>
+        </template>
+
+        <!-- ===== Inline Results Panel (shown when chips exist) ===== -->
+        <template if:true={showResultsPanel}>
+            <div class="results-panel">
+
+                <!-- Filter Tabs -->
+                <div class="filter-tabs" role="tablist">
+                    <template for:each={filterTabs} for:item="tab">
+                        <button
+                            key={tab.key}
+                            class={tab.tabClass}
+                            data-filter={tab.value}
+                            onclick={handleFilterChange}
+                            role="tab"
+                            aria-selected={tab.isActive}
+                        >
+                            {tab.label}
+                            <template if:true={tab.count}>
+                                <span class="tab-count">{tab.count}</span>
+                            </template>
+                        </button>
+                    </template>
+                </div>
+
+                <!-- Results List -->
+                <template if:true={hasPanelResults}>
+                    <ul class="panel-list">
+                        <template for:each={filteredPanelResults} for:item="item">
+                            <li
+                                key={item.key}
+                                class="panel-item"
+                                data-record-id={item.id}
+                                onclick={handleResultClick}
+                                role="button"
+                                tabindex="0"
+                            >
+                                <span class={item.typeDotClass} title={item.typeLabel}></span>
+                                <div class="panel-item-content">
+                                    <div class="panel-item-name">{item.name}</div>
+                                    <template if:true={item.subtitle}>
+                                        <div class="panel-item-subtitle">{item.subtitle}</div>
+                                    </template>
+                                </div>
+                                <template if:true={item.crossCheckLabel}>
+                                    <span class={item.crossCheckClass}>{item.crossCheckLabel}</span>
+                                </template>
+                            </li>
+                        </template>
+                    </ul>
+
+                    <!-- Pagination -->
+                    <template if:true={hasPanelPagination}>
+                        <div class="panel-pagination">
+                            <span class="page-info">{panelPageInfoText}</span>
+                            <div class="pagination-buttons">
+                                <button class="btn-pagination" onclick={handlePreviousPage} disabled={isPreviousDisabled}>← Trước</button>
+                                <span class="page-number">{currentPage} / {totalPages}</span>
+                                <button class="btn-pagination" onclick={handleNextPage} disabled={isNextDisabled}>Tiếp →</button>
+                            </div>
+                        </div>
+                    </template>
+                </template>
+
+                <!-- No Results -->
+                <template if:false={hasPanelResults}>
+                    <div class="no-results" role="status">
+                        Không tìm thấy kết quả phù hợp với điều kiện đã chọn
+                    </div>
+                </template>
+            </div>
+        </template>
+
+        <!-- Error Message -->
+        <template if:true={errorMessage}>
+            <div class="error-message" role="alert">
+                <span>⚠️</span>
+                <span>{errorMessage}</span>
+            </div>
+        </template>
+
+    </div>
+</template>

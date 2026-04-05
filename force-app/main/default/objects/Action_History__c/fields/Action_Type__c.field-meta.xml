@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Action_Type__c</fullName>
+    <label>Action Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Created</fullName>
+                <default>false</default>
+                <label>Created</label>
+            </value>
+            <value>
+                <fullName>Status Updated</fullName>
+                <default>false</default>
+                <label>Status Updated</label>
+            </value>
+            <value>
+                <fullName>Stage Updated</fullName>
+                <default>false</default>
+                <label>Stage Updated</label>
+            </value>
+            <value>
+                <fullName>Status &amp; Stage Updated</fullName>
+                <default>false</default>
+                <label>Status &amp; Stage Updated</label>
+            </value>
+            <value>
+                <fullName>FIELD_CHANGE</fullName>
+                <default>false</default>
+                <label>FIELD_CHANGE</label>
+            </value>
+            <value>
+                <fullName>FIELD_CHANGE_BULK</fullName>
+                <default>false</default>
+                <label>FIELD_CHANGE_BULK</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

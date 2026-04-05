@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Win_Lose_Reason_Type__c</fullName>
+    <description>Phân loại lý do win/lose.</description>
+    <inlineHelpText>Phân loại lý do win/lose.</inlineHelpText>
+    <label>Win/Lose Reason Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>High price</fullName>
+                <default>false</default>
+                <label>High price</label>
+            </value>
+            <value>
+                <fullName>Skill Inefficiency</fullName>
+                <default>false</default>
+                <label>Skill Inefficiency</label>
+            </value>
+            <value>
+                <fullName>End User Cancellation</fullName>
+                <default>false</default>
+                <label>End User Cancellation</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
